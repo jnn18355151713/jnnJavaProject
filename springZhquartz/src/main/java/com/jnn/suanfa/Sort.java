@@ -38,7 +38,7 @@ public class Sort {
     /*
      * 冒泡排序 两两比较 1和2比较 小的往前排,2和3比较...以此类推，
      * 第一轮结束，最后一个肯定是最大的  第二轮就不需要比较了 所以
-     * 是j<arr.length-1-i i依然是轮数
+     * 是j<arr.length-1-i i依然是轮数 稳定
      */
 
     public static  int[] bubbleSort(int[] arr){
@@ -56,5 +56,14 @@ public class Sort {
         }
         return arr;
     }
+    /*
+     *快速排序
+     */
+    public static  int[] quickSort(int[]arr){
+        if (arr==null||arr.length==0){
+            return arr;
+        }
 
+        return arr;
+    }
 }
