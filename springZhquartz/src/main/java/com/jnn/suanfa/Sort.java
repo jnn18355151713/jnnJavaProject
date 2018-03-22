@@ -59,11 +59,29 @@ public class Sort {
     /*
      *快速排序
      */
-    public static  int[] quickSort(int[]arr){
-        if (arr==null||arr.length==0){
-            return arr;
-        }
 
-        return arr;
+    public static  void quickSort(int[]arr){
+        if (arr.length>0){
+           quickSort(arr,0,arr.length-1);
+        }
+    }
+    public static  void quickSort(int[]arr,int low,int high){
+       if (low>high){
+           return;
+       }
+        int i = low;
+        int j =high;
+        int pivot = arr[low];
+        while (i<j){
+            while (i<j&&arr[j]>pivot){
+                j--;
+            }
+            while (i < j && arr[i]<pivot) {
+                i++;
+            }
+            if (i<j){
+                int temp = arr[i];
+            }
+        }
     }
 }
